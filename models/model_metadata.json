@@ -1,0 +1,117 @@
+{
+    "model_name": "Linear Regression",
+    "best_params": {
+        "regressor__fit_intercept": true
+    },
+    "metrics": {
+        "test_r2": 0.8551,
+        "test_rmse": 5.153,
+        "test_mae": 4.001
+    },
+    "model_comparison": [
+        {
+            "model_name": "Linear Regression",
+            "train_r2": 0.8576,
+            "test_r2": 0.8551,
+            "test_rmse": 5.153,
+            "test_mae": 4.001
+        },
+        {
+            "model_name": "Ridge Regression",
+            "train_r2": 0.8576,
+            "test_r2": 0.855,
+            "test_rmse": 5.155,
+            "test_mae": 4.004
+        },
+        {
+            "model_name": "Gradient Boosting",
+            "train_r2": 0.9506,
+            "test_r2": 0.8197,
+            "test_rmse": 5.747,
+            "test_mae": 4.466
+        },
+        {
+            "model_name": "Random Forest",
+            "train_r2": 0.9014,
+            "test_r2": 0.7372,
+            "test_rmse": 6.939,
+            "test_mae": 5.573
+        },
+        {
+            "model_name": "Decision Tree",
+            "train_r2": 0.7538,
+            "test_r2": 0.5275,
+            "test_rmse": 9.304,
+            "test_mae": 7.436
+        }
+    ],
+    "top_features": [
+        {
+            "feature": "attendance_rate",
+            "importance": 0.0979
+        },
+        {
+            "feature": "parental_education_Some High School",
+            "importance": 0.0921
+        },
+        {
+            "feature": "parental_education_Master's Degree",
+            "importance": 0.0865
+        },
+        {
+            "feature": "past_failures",
+            "importance": 0.0845
+        },
+        {
+            "feature": "test_prep_course_Completed",
+            "importance": 0.0757
+        },
+        {
+            "feature": "test_prep_course_Not Completed",
+            "importance": 0.0757
+        },
+        {
+            "feature": "parental_education_Bachelor's Degree",
+            "importance": 0.06
+        },
+        {
+            "feature": "study_hours_per_week",
+            "importance": 0.0597
+        },
+        {
+            "feature": "lunch_type_Free/Reduced",
+            "importance": 0.0543
+        },
+        {
+            "feature": "lunch_type_Standard",
+            "importance": 0.0543
+        },
+        {
+            "feature": "parental_education_High School",
+            "importance": 0.0499
+        },
+        {
+            "feature": "internet_access_No",
+            "importance": 0.041
+        }
+    ],
+    "training_timestamp": "2026-10-02 23:22:51",
+    "features_schema": {
+        "numerical": [
+            "study_hours_per_week",
+            "attendance_rate",
+            "past_failures",
+            "sleep_hours",
+            "family_support"
+        ],
+        "categorical": [
+            "gender",
+            "parental_education",
+            "lunch_type",
+            "test_prep_course",
+            "school_type",
+            "internet_access",
+            "extracurricular"
+        ]
+    }
+}
